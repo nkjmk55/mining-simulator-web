@@ -1,0 +1,24 @@
+@import "tailwindcss";
+
+/*
+  全体テーマ:黒背景系の「開発者ツール風」トーン。
+  Tailwind v4 では @theme でデザイントークン(色など)を定義できる。
+*/
+@theme {
+  /* 等幅フォント:ハッシュ値の表示に使う */
+  --font-mono: "SFMono-Regular", "Consolas", "Liberation Mono", "Menlo",
+    monospace;
+}
+
+html,
+body,
+#root {
+  height: 100%;
+}
+
+body {
+  /* 深い黒〜濃紺のグラデーション背景 */
+  background-color: #0a0e14;
+  color: #d5d9e0;
+  -webkit-font-smoothing: antialiased;
+}
